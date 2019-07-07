@@ -1,4 +1,4 @@
-TEST TECNIO
+TEST TECNCO
 
 	Implementar una solución que exponga recursos para manejar una entidad Persona con las siguientes características
  (todos los atributos son requeridos):
@@ -33,8 +33,9 @@ I. ENTORNO DE DESARROLLO
 
 II.	DESARROLLO
         Se diseño como una app. autocontenida ,
-utilizando el framework de springboot ; para la implementacion
-de la persistenca (JPA ) repository .Los servicios REST se implementaron con swagger y
- en pom del proyecto se agrrgaron ,las dependencias necesarias; para implementarlo como API,
+utilizando el framework de springboot.En la 
+implementacion de la persistenca (JPA ) se utilizo repository .
+Los servicios REST se implementaron con swagger y se agregaron
+las dependencias necesarias; para implementarlo como API,
 con el ojetivo de publicarlos en internet 
-, para ser consumido en otras aplicaciones.
+ para ser consumido en otras aplicaciones.
