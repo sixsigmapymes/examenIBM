@@ -32,3 +32,9 @@ I. ENTORNO DE DESARROLLO
 	SOFTWARE ADICIONAL: Apache Maven 3.3.9.
 
 II.	DESARROLLO
+        Se diseño como una app. autocontenida ,
+utilizando el framework de springboot ; para la implementacion
+de la persistenca (JPA ) repository .Los servicios REST se implementaron con swagger y
+ en pom del proyecto se agrrgaron ,las dependencias necesarias; para implementarlo como API,
+con el ojetivo de publicarlos en internet 
+, para ser consumido en otras aplicaciones.
