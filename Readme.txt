@@ -36,6 +36,6 @@ II.	DESARROLLO
 utilizando el framework de springboot.En la 
 implementacion de la persistenca (JPA ) se utilizo repository .
 Los servicios REST se implementaron con swagger y se agregaron
-las dependencias necesarias; para implementarlo como API,
+las dependencias necesarias; para implementarlo como API a futuro,
 con el ojetivo de publicarlos en internet 
  para ser consumido en otras aplicaciones.
