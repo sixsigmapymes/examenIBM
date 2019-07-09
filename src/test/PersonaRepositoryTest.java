@@ -24,8 +24,8 @@ import com.examen.repository.persona.PersonaRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Configuration("file:src/test/resources/applicationContext.xml")
-// @Sql(scripts = { "sql/test.sql" })
+@Configuration("/resources/application.properties")
+// @Sql(scripts = { "resource/sql/persona.sql" })
 public class PersonaRepositoryTest {
 
 	
@@ -45,13 +45,14 @@ public class PersonaRepositoryTest {
 	@Test
 	public void testBaja() {
 		Persona persona = new Persona();
+		persona.setId((long) 100);
 		persona.setNombre("Nombre1");
 		persona.setApellido("Apellido1");
 		persona.setEdad((short) 18);
 		persona.setSexo("MASCULINO");
-		
+		personaRepository.save(persona);
 		personaRepository.delete(persona);
-		assertTrue(personaRepository.findById((long) 1)==null);
+		assertTrue(personaRepository.findById((long) 1000)==null);
 	}
 
 	
