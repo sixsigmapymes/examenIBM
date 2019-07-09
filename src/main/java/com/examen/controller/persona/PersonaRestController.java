@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.examen.entity.persona.Persona;
-import com.examen.mensajes.persona.Mensajes;
+
 import com.examen.mensajes.persona.StatusOp;
 import com.examen.service.persona.PersonaService;;
 
@@ -37,7 +37,7 @@ public class PersonaRestController {
 	/**
 	 * @return Listado de persona completo
 	 */
-	@GetMapping("/api/Personas")
+	@GetMapping("/api/personas")
 	public List<Persona> getPersonas() {
 		List<Persona> personas = personaService.ListadoPersonas();
 		try {
@@ -51,7 +51,7 @@ public class PersonaRestController {
 		}
 	}
 
-	@GetMapping("/api/Personas/{personaId}")
+	@GetMapping("/api/personas/{personaId}")
 	public Persona getPersona(@PathVariable(name = "personaId") Long personaId) {
 
 		try {
@@ -65,7 +65,7 @@ public class PersonaRestController {
 		}
 	}
 
-	@PostMapping("/api/Personas")
+	@PostMapping("/api/persona")
 	public void savePersona(Persona Persona) throws Exception {
 
 		try {
@@ -75,17 +75,17 @@ public class PersonaRestController {
 		}
 	}
 
-	@DeleteMapping("/api/Personas/{personaId}")
+	@DeleteMapping("/api/persona/{personaId}")
 	public void deletePersona(@PathVariable(name = "personaId") Long personaId) {
 		personaService.bajaPersona(personaId);
 		System.out.println("Persona Deleted Successfully");
 	}
 
-	@PutMapping("/api/Personas/{PersonaId}")
-	public void updatePersona(@RequestBody Persona Persona, @PathVariable(name = "PersonaId") Long PersonaId) throws Exception {
-		Persona emp = personaService.getPersona(PersonaId);
+	@PutMapping("/api/personas/{personaId}")
+	public void updatePersona(@RequestBody Persona persona, @PathVariable(name = "personaId") Long personaId) throws Exception {
+		Persona emp = personaService.getPersona(personaId);
 		try {
-		personaService.updatePersona(Persona);
+		personaService.updatePersona(persona);
 		} catch (Exception e) {
 			throw new Exception("No se actualizo la persona en la base!!");
 		}
