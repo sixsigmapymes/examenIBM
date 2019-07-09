@@ -1,14 +1,12 @@
 /**
  * 
  */
-@Service
 package com.examen.service.persona;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.examen.entity.persona.Persona;
 import com.examen.repository.persona.PersonaRepository;
@@ -17,7 +15,6 @@ import com.examen.repository.persona.PersonaRepository;
  * @author srozenberg
  *
  */
-@Service
 public class PersonaServiceImpl implements PersonaService {
 
 	@Autowired

@@ -23,7 +23,4 @@ public interface PersonaService {
 	
 	Persona getPersona(Long personaId);
 
-
-
-
 }
