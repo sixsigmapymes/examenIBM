@@ -39,3 +39,5 @@ Los servicios REST se implementaron con swagger y se agregaron
 las dependencias necesarias; para implementarlo como API a futuro,
 con el ojetivo de publicarlos en internet 
  para ser consumidos en otras aplicaciones.
+
+20190709
