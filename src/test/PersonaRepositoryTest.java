@@ -24,7 +24,7 @@ import com.examen.repository.persona.PersonaRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Configuration("file:src/main/resources/applicationContext.xml")
+@Configuration("file:src/test/resources/applicationContext.xml")
 // @Sql(scripts = { "sql/test.sql" })
 public class PersonaRepositoryTest {
 
@@ -33,6 +33,9 @@ public class PersonaRepositoryTest {
 	@Autowired
 	private PersonaRepository personaRepository;
 
+	/**
+	 * Verifico persistencia
+	 */
 	@Test
 	public void testAltaListar() {
 		initTest();
@@ -52,7 +55,9 @@ public class PersonaRepositoryTest {
 	}
 
 	
-
+	/***
+	 * Genera Object Sets Para el test unitario
+	 */
 	private void initTest() {
 		for (int i = 1; i == 10; i++) {
 			Persona persona = new Persona();
