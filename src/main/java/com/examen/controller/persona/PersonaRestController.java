@@ -66,10 +66,10 @@ public class PersonaRestController {
 	}
 
 	@PostMapping("/api/persona")
-	public void savePersona(Persona Persona) throws Exception {
+	public void savePersona(Persona persona) throws Exception {
 
 		try {
-			personaService.altaPersona(Persona);
+			personaService.altaPersona(persona);
 		} catch (Exception e) {
 			throw new Exception("No se dio de alta la persona en la base!!");
 		}
