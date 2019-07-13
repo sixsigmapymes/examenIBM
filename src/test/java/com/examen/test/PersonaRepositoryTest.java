@@ -14,13 +14,16 @@ import javax.persistence.Tuple;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import com.examen.entity.persona.Persona;
-import com.examen.repository.persona.PersonaRepository;
+import com.examen.ibm.entity.persona.Persona;
+import com.examen.ibm.repository.PersonaRepository;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
